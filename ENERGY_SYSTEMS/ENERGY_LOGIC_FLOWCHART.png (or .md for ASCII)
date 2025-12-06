@@ -1,1 +1,231 @@
+ENERGY_LOGIC_FLOWCHART.md
+Lunar Dust Mitigator (LDM) – Energy Logic Flow
 
+This file defines the complete energy-decision logic for the LDM.
+It models how the system decides when to operate, how hard to operate, and when to sleep — based entirely on:
+
+Solar input
+
+Battery state
+
+Thermal window
+
+Duty cycle rules
+
+Night-mode status
+
+This is the canonical LDM energy algorithm.
+
+1. System Overview
+
+The LDM is solar-powered and operates in micro-bursts rather than continuous draw.
+It uses:
+
+Solar Array → MPPT → Battery + Main Bus
+
+Electrostatic O-Machine
+
+Control Board + Sensor Cluster
+
+Optional Night Mode (low duty cycle)
+
+The design prioritizes:
+
+Longevity over speed
+
+Low power over high throughput
+
+Minimal moving parts
+
+Decadal reliability
+
+2. High-Level Flowchart (Text Form)
+
+Below is the exact logic sequence, readable by engineers, devs, and GitHub users.
+
+START
+ │
+ ▼
+Check Solar Input
+ │
+ ├── If Solar > Minimum Operating Threshold:
+ │        │
+ │        ▼
+ │   Enter DAY MODE
+ │        │
+ │        ├── Charge Battery (via MPPT)
+ │        ├── Operate O-Machine Bursts
+ │        ├── Run Sensors + Control Logic
+ │        └── Evaluate Battery Level
+ │              │
+ │              ├── If Battery >= 95%:
+ │              │        Reduce MPPT aggressiveness
+ │              │        Maintain top-charge window (85–95%)
+ │              │
+ │              └── If Battery < 25%:
+ │                       Route all solar to recovery charging
+ │
+ └── Else (Solar < Threshold):
+          │
+          ▼
+     Check Battery Level
+          │
+          ├── If Battery >= 75% AND Night-Mode Enabled:
+          │        │
+          │        └── Enter NIGHT MODE (Low-duty operation)
+          │               │
+          │               ├── O-Machine pulses at low frequency
+          │               ├── Sensors heartbeat only
+          │               ├── Control board throttles duty cycle
+          │               └── If Battery < 50% → FORCE SLEEP
+          │
+          └── If Battery < 75% OR Night-Mode Disabled:
+                   │
+                   └── Enter SLEEP MODE
+                          │
+                          ├── Sensors: minimal heartbeat
+                          ├── O-Machine: fully off
+                          └── Await solar return
+
+3. DAY MODE Logic
+Operating Conditions
+
+Solar > minimum operating threshold
+
+Battery < 95% OR system needs to run O-Machine
+
+Actions
+
+MPPT aggressively charges battery
+
+O-Machine fires micro-bursts
+
+Sensor package runs nominally
+
+Control board logs thermal + power data
+
+If Solar is abundant:
+
+Battery charged first
+
+Excess routed to O-Machine for increased burst frequency
+
+If Solar is weak but present:
+
+Battery supports the O-Machine in short bursts
+
+Duty cycle automatically reduces
+
+4. NIGHT MODE Logic (Optional)
+
+Night-mode only runs if:
+
+Battery ≥ 75% at sunset
+
+Night-Mode is explicitly enabled in firmware config
+
+Duty Cycle Curve
+Battery %	Behavior
+100–75%	Low-frequency electrostatic pings
+74–50%	Minimal activity (rare pulses)
+< 50%	Immediate SLEEP mode
+
+Night-mode is not mission-essential — it’s a bonus mode.
+
+5. SLEEP MODE Logic
+
+Triggered when:
+
+Battery < 50% during night-mode
+
+Night-mode disabled
+
+Solar input zero
+
+Battery < minimal safe-use threshold
+
+Actions in Sleep Mode
+
+O-Machine completely offline
+
+Sensors heartbeat only
+
+Control board enters low-power clock
+
+Await sunrise or solar return
+
+The LDM can “hibernate” for months if needed.
+Dust mitigation effectiveness is cumulative, not time-sensitive.
+
+6. Thermal Management Logic
+
+Integrated into energy logic:
+
+If internal temperature < safe minimum
+→ reduce duty cycle
+
+If internal temperature > upper limit
+→ force cooldown (Sleep Mode)
+
+Thermal logic always has override priority.
+
+7. Micro-Burst Power Logic
+
+The O-Machine fires after checking:
+
+Solar availability
+
+Battery state
+
+Thermal OK
+
+E-plate voltage threshold reached
+
+This ensures:
+
+No runaway discharge
+
+No overstressing electronics
+
+Controlled, predictable long-term operation
+
+8. Pseudocode Version (for engineers)
+while (true):
+    solar = measureSolar()
+    batt  = measureBattery()
+    temp  = measureTemp()
+
+    if (temp outside safe range):
+        enterSleep()
+        continue
+
+    if (solar > SOLAR_MIN):
+        enterDayMode()
+        chargeBattery()
+        if (batt < BATTERY_RECOVERY_LEVEL):
+            reduceOBursts()
+        else:
+            normalOBursts()
+        continue
+
+    else: # solar too low
+        if (nightModeEnabled and batt >= NIGHT_MODE_MIN):
+            enterNightMode()
+            if (batt < NIGHT_MODE_EXIT_LEVEL):
+                enterSleep()
+        else:
+            enterSleep()
+
+9. Summary
+
+The LDM’s energy logic is built for:
+
+Decades of unattended operation
+
+Graceful degradation
+
+No catastrophic failure mode
+
+Extremely low power requirements
+
+This is why the LDM can sit at a lunar habitat for years and steadily improve the dust environment with no maintenance, no resupply, and no human oversight.
