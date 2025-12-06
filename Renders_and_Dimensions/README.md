@@ -20,7 +20,8 @@ This folder acts as the **visual companion** to the technical report and schemat
 
 ## 🖼️ 2. Contents of This Folder
 
-You will find (or will soon upload):
+You will find (<img width="825" height="825" alt="image" src="https://github.com/user-attachments/assets/1fc11815-20a0-48fd-902d-d7ea186f9e8c" />
+):
 
 - **Isometric renders**  
 - **Front / Side / Top orthographic views**  
