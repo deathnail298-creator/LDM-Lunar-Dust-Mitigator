@@ -1,0 +1,143 @@
+# Deployment & Autonomous Operation  
+### Lunar Dust Mitigator (LDM)
+
+This folder contains the deployment logic, autonomous decision flows, and operational lifecycle behavior for the Lunar Dust Mitigator (LDM).  
+It defines how the system transitions from orbital delivery → surface deployment → autonomous long-duration operation with no human intervention.
+
+---
+
+## 🚀 1. Deployment Overview
+
+The LDM is designed for **fully autonomous deployment** from an orbital or surface-delivery vehicle.  
+No astronauts, technicians, or robotic arms are required.
+
+Deployment includes:
+
+1. **Release from lander/orbiter** (drop, push-off, or eject)
+2. **Impact-tolerant landing**
+3. **Tripod stabilization & settling**
+4. **Power-on initialization**
+5. **Sensor wake cycle**
+6. **Begin passive dust-rounding operation**
+
+The system is designed so that *any correct orientation is survivable*.  
+If deployed upside-down, side-tilted, or partially buried, the structure self-rights or defaults into passive mode.
+
+---
+
+## 🧠 2. Autonomy Philosophy
+
+The LDM follows the core principle:
+
+> **Fail Passive, Operate Forever.**
+
+Meaning:
+
+- If any component fails → system keeps running.
+- If sensors degrade → fallback to passive operation.
+- If power drops → low-frequency night mode takes over.
+- No single failure mode stops dust rounding.
+
+Zero human intervention required for multi-decadal timelines.
+
+---
+
+## 🔋 3. Power Logic (Day/Night Mode)
+
+### **Day Mode (Primary Operation)**
+- Solar input available  
+- Full O-Machine electrostatic activity  
+- Higher burst-frequency for dust collisions  
+- Charge equalization cycles  
+- Open-back dust exhaust remains fully active  
+
+### **Night Mode (Optional Low-Frequency Mode)**
+- Activated only if **energy surplus exists**  
+- Burst rate scaled down  
+- Prioritizes component longevity  
+- Never drains battery below survival threshold  
+
+If night mode cannot run, the system simply becomes inert until sunrise.
+
+---
+
+## 📡 4. Sensor Logic (Minimalist Robust Design)
+
+Sensors include:
+
+- **Photoelectric / ambient light detection**  
+- **Charge buildup sensors**  
+- **Thermal sensors** (health, throttling)  
+- **Simple dust ingress counters** (optional)
+
+### Core Rules:
+- Sensor failure **never halts operation**  
+- Only four decisions exist:
+  1. Run full mode  
+  2. Run reduced-frequency mode  
+  3. Idle  
+  4. Safety discharge cycle (electrostatic reset)
+
+---
+
+## 🔁 5. Operational Flowchart
+
+### **Simplified Logic**
+
+BOOT →
+Check Battery →
+If < threshold: Idle until solar recovery →
+If ≥ threshold: Run Day Mode →
+Monitor Sensors →
+If Overcharge: Run discharge cycle →
+If Overheat: Cooldown Idle →
+If Dust Jam: Reverse pulse / self-clear →
+Else: Continue rounding →
+Loop Forever
+
+yaml
+Copy code
+
+This architecture is intentionally simple — fewer failure states = more decades of reliable operation.
+
+---
+
+## 🛡️ 6. Survivability Features
+
+- **Impact-tolerant frame**  
+- **Self-cleaning front electrostatic repulsor**  
+- **Open-back ejection chamber prevents clogging**  
+- **Only one movable subsystem: electrostatic cycling**  
+- **No bearings, belts, fans, or mechanical wear parts**  
+- **Redundant grounding paths prevent capacitor runaway**  
+
+System is designed for:
+
+- regolith storms  
+- micrometeoroid pitting  
+- thermal cycles (−170°C to +120°C)  
+- electrostatic overcharge  
+- multi-year dust accumulation  
+
+---
+
+## 🌙 7. Long-Term Behavior (10–30 Years)
+
+Over decades the LDM:
+
+- Gradually rounds sharp particles  
+- Lowers environmental abrasiveness  
+- Reduces regolith adhesion to everything  
+- Improves astronaut suit life  
+- Reduces wear on rover joints, optics, seals  
+- Softens surfaces near habitats and ingress zones  
+
+Performance goal:  
+**~20% rounding effectiveness**, accumulating over years of continuous presence.
+
+---
+
+## © Attribution
+
+By Nathan Rudloff — Inventor  
+Licensed under the Kaizen 3% Royalty Commercial License
