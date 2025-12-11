@@ -3,6 +3,8 @@
 #### By Nathan Rudloff — Inventor | © 2025 | All Rights Reserved  
 #### Licensed under the Kaizen 3% Royalty Commercial License
 
+Possible NASA SBIR: This Phase Zero architecture could be applied to NASA SBIR topics related to dust-proof connectors, dust-tolerant mechanisms, and lunar surface operations, particularly in contexts where dust mitigation is required for construction, mobility, or equipment longevity.
+
 ---
 
 ## 🌑 1. Overview
