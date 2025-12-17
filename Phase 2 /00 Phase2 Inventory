@@ -1,0 +1,166 @@
+# Phase 2 Inventory — Lunar Dust Mitigator (LDM)
+
+> **Phase:** 2 (Theory‑Only)
+>
+> **Rule:** This inventory is the gatekeeper. Only items that can be completed **100% analytically, in‑chat, without external data, labs, simulations, hardware, or procurement** are allowed to remain.
+>
+> Anything that violates this rule is explicitly **crossed out** and excluded.
+
+---
+
+## How to Use This File
+
+* This file is read **top‑to‑bottom** before any Phase 2 work begins.
+* Each section below corresponds to a single Phase 2 document.
+* Items are either:
+
+  * **Included** — analytically completable
+  * **Excluded (struck out)** — requires external validation or execution
+
+No new items may be added without updating this inventory.
+
+---
+
+## Included Phase 2 Work (Authoritative)
+
+### 01 — System Assumptions
+
+* Operating environment bounds (lunar surface, vacuum, dust characteristics at a conceptual level)
+* Assumptions inherited from Phase 0 / Phase 1
+* Explicit non‑assumptions (things we refuse to guess)
+
+Status: **Included**
+
+---
+
+### 02 — Physics Bounds
+
+* Order‑of‑magnitude dust behavior limits
+* Momentum / adhesion / abrasion reasoning
+* Worst‑case vs best‑case envelopes
+* Physics that *cannot* be violated
+
+Status: **Included**
+
+---
+
+### 03 — Thermal Model (Analytical)
+
+* Passive thermal paths
+* Radiative vs conductive dominance
+* Lunar day/night envelope reasoning
+* Upper and lower survivability bounds
+
+Status: **Included**
+
+---
+
+### 04 — Power Model (Feasibility‑Only)
+
+* Energy source assumptions inherited from Phase 1
+* Upper/lower power availability bounds
+* Idle vs active conceptual draw
+* Power‑kill conditions
+
+Status: **Included**
+
+---
+
+### 05 — Geometry Logic
+
+* Dust interception geometry reasoning
+* Line‑of‑sight vs plume interception logic
+* Orientation invariants
+* What geometry *cannot* work
+
+Status: **Included**
+
+---
+
+### 06 — Failure Tree (Theory)
+
+* Deterministic failure modes
+* First‑order cascades
+* Benign vs mission‑killing failures
+* Failure modes explicitly ignored (and why)
+
+Status: **Included**
+
+---
+
+### 07 — Throughput Limits
+
+* Conceptual dust mass capture bounds
+* Time‑averaged vs burst behavior
+* Saturation logic
+* Diminishing‑returns thresholds
+
+Status: **Included**
+
+---
+
+### 08 — Scaling Theory
+
+* Single‑unit vs multi‑unit reasoning
+* Non‑linear scaling traps
+* Interference effects
+* What does *not* scale
+
+Status: **Included**
+
+---
+
+### 09 — Interface Constraints
+
+* Mechanical interfaces (conceptual)
+* Thermal interfaces (conceptual)
+* Operational adjacency constraints
+* Explicit non‑interfaces
+
+Status: **Included**
+
+---
+
+### 10 — Theory Summary
+
+* What survived Phase 2
+* What died in Phase 2
+* Remaining unknowns that require real testing
+* Clear handoff boundary to Phase 3
+
+Status: **Included**
+
+---
+
+## Explicitly Excluded Items
+
+The following are **not allowed** in Phase 2 and are intentionally excluded:
+
+* ~~CFD simulations~~
+* ~~DEM / particle simulations~~
+* ~~Empirical dust adhesion models~~
+* ~~Lab test plans~~
+* ~~Field test protocols~~
+* ~~Material selection optimization~~
+* ~~Manufacturing methods~~
+* ~~Cost models~~
+* ~~Schedules or roadmaps~~
+* ~~Performance claims requiring data~~
+
+---
+
+## Phase Discipline Check
+
+If a question arises and the answer begins with:
+
+* “We would need to test…”
+* “We would need to simulate…”
+* “We would need vendor data…”
+
+Then the item does **not** belong in Phase 2.
+
+---
+
+## Plain‑English Summary
+
+This file defines exactly what Phase 2 of the Lunar Dust Mitigator is allowed to contain. It permits only theory and analytical reasoning that can be completed without building, testing, or simulating anything. Anything that cannot meet that standard is explicitly excluded.
