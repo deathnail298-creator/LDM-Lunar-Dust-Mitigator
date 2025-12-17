@@ -1,0 +1,140 @@
+# 01 — System Assumptions
+
+## Lunar Dust Mitigator (LDM) — Phase 2 (Theory-Only)
+
+> **Phase:** 2 (Theory)
+>
+> **Scope Rule:** This document records only assumptions that are required to reason analytically about feasibility. No assumption may rely on unverified test data, simulations, vendor claims, or future technology.
+
+---
+
+## Purpose of This Document
+
+This file establishes the **explicit assumptions** under which all Phase 2 reasoning is valid.
+
+Anything not listed here is either:
+
+* inherited verbatim from Phase 0 / Phase 1, or
+* explicitly *not assumed* and treated as unknown.
+
+If an assumption is later shown to be false, all dependent Phase 2 conclusions must be reconsidered.
+
+---
+
+## Assumptions Inherited from Phase 0 / Phase 1
+
+The following assumptions are carried forward without modification:
+
+### A1 — Operating Environment
+
+* Operation occurs on the lunar surface or in direct proximity to it
+* Vacuum or near-vacuum environment
+* No atmospheric convection
+* High radiation exposure relative to Earth
+
+### A2 — Dust Characteristics (Qualitative)
+
+* Lunar dust is fine-grained, angular, abrasive, and electrostatically active
+* Dust is mechanically harmful to exposed systems
+* Dust mobilization occurs during:
+
+  * landings
+  * rover motion
+  * crew activity
+
+No quantitative dust-size distribution is assumed.
+
+### A3 — Mission Philosophy
+
+* The system is infrastructure, not a vehicle
+* Continuous perfection is not required; degradation is acceptable
+* Partial effectiveness is still mission-useful
+
+---
+
+## New Phase 2 Assumptions
+
+These assumptions are introduced solely to permit analytical reasoning.
+
+### A4 — Passive-First Design Bias
+
+* Passive mechanisms are preferred wherever possible
+* Active elements are assumed to be minimal, simple, and failure-tolerant
+
+This assumption bounds complexity but does not mandate full passivity.
+
+### A5 — Non-Critical Timing
+
+* Dust mitigation effectiveness does not depend on millisecond or second-level timing
+* Order-of-magnitude timing suffices for usefulness
+
+This eliminates real-time control requirements from Phase 2 reasoning.
+
+### A6 — Local Interaction Domain
+
+* The system primarily affects dust within a local spatial region
+* No assumption of area-wide dust suppression
+
+All reasoning assumes *local mitigation*, not environmental control.
+
+---
+
+## Explicit Non-Assumptions
+
+The following are **explicitly not assumed** and must not be relied upon:
+
+### N1 — Exact Dust Size Distribution
+
+* No assumed particle size histogram
+* No assumed cohesion coefficients
+
+### N2 — Electrostatic Control
+
+* No assumption that dust can be actively neutralized or repelled
+* Electrostatics may exist but are not controllable
+
+### N3 — Precise Material Properties
+
+* No reliance on specific alloys, coatings, or surface treatments
+* No assumed lifetime based on material science optimization
+
+### N4 — Guaranteed Performance Metrics
+
+* No assumed percentage reduction of dust
+* No assumed capture efficiency
+
+### N5 — Human Intervention
+
+* No assumption of regular cleaning, adjustment, or maintenance
+
+---
+
+## Assumptions About Failure
+
+### F1 — Failure Is Acceptable
+
+* Gradual degradation is expected
+* Total failure is not catastrophic to the broader mission
+
+### F2 — No Hidden Recovery
+
+* Failed components do not magically self-recover
+* Redundancy, if any, must be structural, not assumed
+
+---
+
+## Boundary Conditions for Phase 2 Reasoning
+
+All subsequent Phase 2 analysis must:
+
+* Reference these assumptions explicitly when used
+* Avoid introducing new assumptions implicitly
+* Call out assumption violations clearly
+
+If an analysis step requires adding a new assumption, this document must be updated first.
+
+---
+
+## Plain-English Summary
+
+This document lists the assumptions that Phase 2 analysis of the Lunar Dust Mitigator relies on. It includes what is assumed, what is inherited from earlier phases, and what is explicitly not assumed. These assumptions bound all later theory work and prevent hidden dependencies on testing or optimization.
