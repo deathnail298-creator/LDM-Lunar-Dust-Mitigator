@@ -1,0 +1,167 @@
+# 07 — Throughput Limits
+
+## Lunar Dust Mitigator (LDM) — Phase 2 (Theory-Only)
+
+> **Phase:** 2 (Theory)
+>
+> **Scope Rule:** This document bounds dust interception throughput using first-order reasoning only. No empirical plume models, particle simulations, test data, or performance guarantees are assumed.
+
+---
+
+## Purpose of This Document
+
+This file answers:
+
+> **How much dust can the Lunar Dust Mitigator plausibly intercept before diminishing returns dominate, and when does additional effort stop mattering?**
+
+Throughput here is a *conceptual ceiling*, not a promise.
+
+---
+
+## Reference Assumptions
+
+All reasoning relies solely on:
+
+* `01_System_Assumptions.md`
+* `02_Physics_Bounds.md`
+* `03_Thermal_Model.md`
+* `04_Power_Model.md`
+* `05_Geometry_Logic.md`
+* `06_Failure_Tree.md`
+
+No new assumptions are introduced.
+
+---
+
+## Definition of Throughput
+
+For Phase 2 purposes:
+
+* **Throughput** = dust mass intercepted per unit time *within the local interaction zone*
+
+This explicitly excludes:
+
+* total site dust generation
+* dust suppression
+* environmental cleanup
+
+---
+
+## Dominant Throughput Constraints
+
+### C1 — Geometric Cross-Section
+
+Interception probability scales with:
+
+* exposed frontal area
+* orientation relative to dust trajectories
+
+Upper bound:
+
+* cannot exceed the geometric cross-section presented
+
+---
+
+### C2 — Trajectory Dispersion
+
+Dust trajectories:
+
+* are spread over angles
+* vary event-to-event
+
+Implication:
+
+* capture probability asymptotically approaches a ceiling
+
+---
+
+### C3 — Accumulation Saturation
+
+As dust accumulates:
+
+* effective capture surfaces change
+* storage volumes fill
+
+Implication:
+
+* marginal gains decrease over time
+
+---
+
+### C4 — Duty Cycle Limits
+
+If any active behavior exists:
+
+* it operates intermittently
+* missed events are expected
+
+Implication:
+
+* throughput is time-averaged, not peak-based
+
+---
+
+## Diminishing Returns Regime
+
+Beyond a certain point:
+
+* increasing surface area yields smaller gains
+* additional complexity increases failure risk faster than throughput
+
+This regime begins when:
+
+* local dust flux is no longer the limiting factor
+* geometry coverage is already dominant
+
+---
+
+## Upper-Bound Reasoning (Conceptual)
+
+At a first-order level:
+
+* throughput is bounded by local dust flux × effective interception fraction
+* interception fraction < 1 by definition
+
+Perfect capture is physically impossible.
+
+---
+
+## Throughput Kill Conditions
+
+The concept fails Phase 2 if it requires:
+
+* capturing a majority of all dust generated
+* precise prediction of dust events
+* continuous active engagement to maintain throughput
+
+These imply unrealistic control and power demands.
+
+---
+
+## Survivable Throughput Expectations
+
+What survives Phase 2:
+
+* partial interception
+* protection of critical assets
+* reduction of worst-case exposure
+
+The goal is *mitigation*, not elimination.
+
+---
+
+## Phase 2 Conclusion (Throughput)
+
+Throughput is fundamentally limited by:
+
+* geometry
+* locality
+* accumulation
+
+Meaningful mitigation is possible, but only within a bounded, diminishing-returns regime.
+
+---
+
+## Plain-English Summary
+
+This document shows that the Lunar Dust Mitigator can only intercept a limited fraction of local dust and that attempting to capture everything is physically unrealistic. Throughput quickly enters a diminishing-returns regime, meaning the system’s value comes from reducing worst-case dust exposure rather than eliminating dust entirely.
