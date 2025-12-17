@@ -1,0 +1,170 @@
+# 04 — Test Question Set (Questions Only)
+
+## Lunar Dust Mitigator (LDM) — Phase 3 (Theory-Only)
+
+> **Phase:** 3 (Theory)
+>
+> **Scope Rule:** This document defines *questions that reality must answer* before execution can proceed. It intentionally does **not** define test setups, procedures, instrumentation, facilities, schedules, or metrics.
+
+---
+
+## Purpose of This Document
+
+This file answers:
+
+> **What questions must be answered by interaction with reality before any execution decision is justified?**
+
+If a question can be answered analytically, it does not belong here.
+
+---
+
+## Reference Baseline
+
+All questions:
+
+* derive from `01_Unknowns_Registry.md`
+* respect dependencies in `02_Dependency_and_Coupling_Map.md`
+* enforce stop conditions in `03_Kill_Criteria_Definition.md`
+* introduce no new assumptions
+
+---
+
+## Question Classification
+
+Each question is tagged with:
+
+* **Domain:** dust / thermal / mechanical / power / integration
+* **Decision Type:** go/no-go, range-bounding, degradation confirmation
+* **Priority:** critical / high / medium
+
+No acceptance thresholds are defined here.
+
+---
+
+## Q-01 — Local Dust Interception Reality Check
+
+* **Domain:** Dust Interaction
+* **Decision Type:** Go / No-Go
+* **Priority:** Critical
+
+**Question:**
+Under realistic plume and activity conditions, does a Phase-2-valid geometry intercept *any meaningful fraction* of locally incident dust?
+
+Failure of this question triggers **K-A1** or **K-C1**.
+
+---
+
+## Q-02 — Accumulation Behavior Over Time
+
+* **Domain:** Dust Interaction
+* **Decision Type:** Range-Bounding
+* **Priority:** Critical
+
+**Question:**
+How does dust accumulate, bridge, compact, or shed within passive geometries over time?
+
+Failure of this question may trigger **K-C1**.
+
+---
+
+## Q-03 — Abrasion Rate Reality Check
+
+* **Domain:** Mechanical
+* **Decision Type:** Degradation Confirmation
+* **Priority:** High
+
+**Question:**
+Do viable interception surfaces survive long enough to provide net mitigation value before geometry is lost?
+
+Failure of this question may trigger **K-C2**.
+
+---
+
+## Q-04 — Thermal Stability With Dust Loading
+
+* **Domain:** Thermal
+* **Decision Type:** Go / No-Go
+* **Priority:** High
+
+**Question:**
+Does dust accumulation induce thermal behavior that violates Phase 2 thermal bounds?
+
+Failure of this question triggers **K-B1**.
+
+---
+
+## Q-05 — Partial Burial Survivability
+
+* **Domain:** Integration / Environment
+* **Decision Type:** Go / No-Go
+* **Priority:** Critical
+
+**Question:**
+When partially buried by plume fallout or regolith movement, does the system retain any useful interception behavior?
+
+Failure of this question triggers **K-C1** or **K-E1**.
+
+---
+
+## Q-06 — Secondary Dust Hazard Creation
+
+* **Domain:** Integration
+* **Decision Type:** Go / No-Go
+* **Priority:** Critical
+
+**Question:**
+Does dust redirection measurably increase exposure risk for adjacent critical systems?
+
+Failure of this question triggers **K-D1**.
+
+---
+
+## Q-07 — Active Power Dependency Emergence
+
+* **Domain:** Power
+* **Decision Type:** Go / No-Go
+* **Priority:** Medium
+
+**Question:**
+Does effective operation require continuous or frequent active power beyond Phase 2 assumptions?
+
+Failure of this question triggers **K-A2**.
+
+---
+
+## Q-08 — Single-Unit Generalization
+
+* **Domain:** Scaling
+* **Decision Type:** Go / No-Go
+* **Priority:** Medium
+
+**Question:**
+Does behavior observed in a single unit reasonably generalize to multiple units without introducing new couplings?
+
+Failure of this question triggers **K-E1**.
+
+---
+
+## Ordering and Discipline
+
+* Questions are intentionally ordered by existential risk
+* Lower-priority questions are irrelevant if higher-priority questions fail
+* No optimization questions are allowed
+
+---
+
+## Phase 3 Conclusion (Test Questions)
+
+These questions:
+
+* define what execution must learn
+* prevent premature solutionism
+* enable early termination with evidence
+
+They exist to *protect* resources, not to justify spending them.
+
+---
+
+## Plain-English Summary
+
+This document lists the real-world questions that must be answered before building or testing the Lunar Dust Mitigator makes sense. It deliberately avoids describing how to run tests and instead focuses on what must be learned to decide whether the system should proceed or be terminated.
