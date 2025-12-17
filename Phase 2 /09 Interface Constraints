@@ -1,0 +1,176 @@
+# 09 — Interface Constraints
+
+## Lunar Dust Mitigator (LDM) — Phase 2 (Theory-Only)
+
+> **Phase:** 2 (Theory)
+>
+> **Scope Rule:** This document defines how the Lunar Dust Mitigator may interface with adjacent systems without creating hidden dependencies, hazards, or control requirements. Interfaces are treated as constraints, not features.
+
+---
+
+## Purpose of This Document
+
+This file answers:
+
+> **What must the Lunar Dust Mitigator *not* require from neighboring systems in order to remain a valid piece of lunar infrastructure?**
+
+Interface mistakes are one of the most common ways otherwise-viable systems fail integration.
+
+---
+
+## Reference Assumptions
+
+All reasoning relies solely on:
+
+* `01_System_Assumptions.md`
+* `02_Physics_Bounds.md`
+* `03_Thermal_Model.md`
+* `04_Power_Model.md`
+* `05_Geometry_Logic.md`
+* `06_Failure_Tree.md`
+* `07_Throughput_Limits.md`
+* `08_Scaling_Theory.md`
+
+No new assumptions are introduced.
+
+---
+
+## Interface Philosophy
+
+The Lunar Dust Mitigator is treated as:
+
+* **non-critical infrastructure**
+* **non-authoritative** over other systems
+* **incapable of demanding coordination**
+
+Any interface that violates these principles is forbidden.
+
+---
+
+## Mechanical Interfaces
+
+### Allowed
+
+* passive adjacency (placed near other hardware)
+* non-load-bearing contact
+* optional physical anchoring to regolith
+
+### Forbidden
+
+* structural load paths through other systems
+* reliance on precise mounting tolerances
+* use as a support or shield for unrelated hardware
+
+Rationale: failure must not propagate mechanically.
+
+---
+
+## Thermal Interfaces
+
+### Allowed
+
+* incidental radiative coupling
+* incidental conductive contact with regolith
+
+### Forbidden
+
+* reliance on adjacent systems as heat sinks
+* shared thermal control loops
+* assumptions about neighboring temperature control
+
+Rationale: thermal behavior must be self-contained.
+
+---
+
+## Power Interfaces
+
+### Allowed
+
+* optional independent power connection
+* standalone stored energy
+
+### Forbidden
+
+* continuous power draw from critical systems
+* dependence on external power for baseline survival
+* shared power buses
+
+Rationale: loss of power must not create cascading failures.
+
+---
+
+## Data and Control Interfaces
+
+### Allowed
+
+* optional status reporting
+* passive indicators
+
+### Forbidden
+
+* required command-and-control links
+* real-time coordination with other systems
+* closed-loop control dependencies
+
+Rationale: the system must function without supervision.
+
+---
+
+## Operational Interfaces
+
+### Allowed
+
+* independent deployment
+* independent failure and degradation
+
+### Forbidden
+
+* requirements for human intervention
+* routine maintenance dependencies
+* operational coupling to mission timelines
+
+Rationale: infrastructure must be ignorable.
+
+---
+
+## Safety and Hazard Interfaces
+
+### Constraints
+
+* failure must not eject debris toward critical assets
+* failure must not amplify dust hazards
+* thermal failure must not create secondary hazards
+
+The system must fail quietly.
+
+---
+
+## Interface Kill Conditions
+
+The concept fails Phase 2 if it requires:
+
+* integration into primary structural systems
+* shared thermal or power infrastructure
+* real-time control interfaces
+* operator attention for baseline safety
+
+These imply hidden coupling and unacceptable risk.
+
+---
+
+## Phase 2 Conclusion (Interfaces)
+
+The Lunar Dust Mitigator is only viable if it:
+
+* remains mechanically independent
+* is thermally self-contained
+* draws no critical power
+* demands no control authority
+
+Any tighter coupling violates Phase 2 discipline.
+
+---
+
+## Plain-English Summary
+
+This document defines strict limits on how the Lunar Dust Mitigator can connect to other systems. It must remain mechanically, thermally, electrically, and operationally independent so that its failure never endangers critical hardware or mission timelines. Interfaces are treated as liabilities to be minimized, not capabilities to be expanded.
