@@ -1,0 +1,195 @@
+# 06 — Failure Tree (Deterministic)
+
+## Lunar Dust Mitigator (LDM) — Phase 2 (Theory-Only)
+
+> **Phase:** 2 (Theory)
+>
+> **Scope Rule:** This document enumerates deterministic failure modes and first-order cascades. No probabilistic reliability modeling, test data, or MTBF estimates are used.
+
+---
+
+## Purpose of This Document
+
+This file answers:
+
+> **What fails first, how does it fail, and does that failure kill the concept or merely degrade it?**
+
+Phase 2 treats failure as expected behavior, not an exception.
+
+---
+
+## Reference Assumptions
+
+All reasoning relies solely on:
+
+* `01_System_Assumptions.md`
+* `02_Physics_Bounds.md`
+* `03_Thermal_Model.md`
+* `04_Power_Model.md`
+* `05_Geometry_Logic.md`
+
+No new assumptions are introduced.
+
+---
+
+## Failure Classification
+
+Failures are grouped into three classes:
+
+* **Class A — Benign:** performance degradation only
+* **Class B — Degrading:** reduced usefulness, still mission-tolerable
+* **Class C — Fatal:** invalidates the core concept
+
+Only Class C failures kill Phase 2.
+
+---
+
+## Mechanical Failure Modes
+
+### M1 — Abrasive Surface Erosion
+
+* Cause: continuous dust impact
+* Effect: surface roughening, mass loss
+* Classification: **Class A**
+
+Rationale: erosion is expected and does not negate interception.
+
+---
+
+### M2 — Accumulation Saturation
+
+* Cause: dust capture exceeds storage or shedding capacity
+* Effect: reduced capture efficiency
+* Classification: **Class B**
+
+Rationale: saturation degrades performance but does not cause harm.
+
+---
+
+### M3 — Structural Fracture
+
+* Cause: impact, thermal cycling, or fatigue
+* Effect: partial loss of geometry
+* Classification: **Class B** if partial, **Class C** if total collapse
+
+Rationale: blunt geometries can lose sections and remain useful.
+
+---
+
+## Thermal Failure Modes
+
+### T1 — Overheating Due to Geometry
+
+* Cause: trapped radiation, poor sky view
+* Effect: material damage or distortion
+* Classification: **Class C**
+
+Rationale: thermal runaway kills structural integrity.
+
+---
+
+### T2 — Excessive Thermal Cycling
+
+* Cause: isolation from regolith, low thermal mass
+* Effect: cracking, loosening, fatigue
+* Classification: **Class B**
+
+Rationale: gradual degradation is tolerable.
+
+---
+
+## Power Failure Modes
+
+### P1 — Energy Depletion
+
+* Cause: extended active operation or eclipse
+* Effect: system becomes passive-only
+* Classification: **Class A**
+
+Rationale: passive behavior is still useful.
+
+---
+
+### P2 — Power System Failure
+
+* Cause: battery failure or harvesting loss
+* Effect: permanent loss of active functions
+* Classification: **Class B**
+
+Rationale: active elements are non-critical.
+
+---
+
+## Environmental Failure Modes
+
+### E1 — Partial Burial
+
+* Cause: plume fallout or regolith movement
+* Effect: altered interception geometry
+* Classification: **Class B**
+
+Rationale: geometry remains partially functional.
+
+---
+
+### E2 — Complete Burial
+
+* Cause: extreme plume deposition
+* Effect: total loss of function
+* Classification: **Class C**
+
+Rationale: buried systems cannot intercept dust.
+
+---
+
+## Interface Failure Modes
+
+### I1 — Adjacent System Interference
+
+* Cause: unexpected interaction with nearby hardware
+* Effect: reduced effectiveness or damage
+* Classification: **Class B**
+
+Rationale: interference degrades but does not negate concept.
+
+---
+
+## Failure Cascades (First-Order)
+
+Examples:
+
+* Accumulation → mass increase → thermal cycling stress
+* Thermal distortion → geometry loss → reduced interception
+
+These cascades are slow and observable, not instantaneous.
+
+---
+
+## Phase 2 Kill Conditions
+
+The concept fails Phase 2 if:
+
+* thermal runaway is unavoidable
+* geometry collapse is intrinsic
+* survivability depends on continuous power
+* failure produces collateral damage to adjacent systems
+
+---
+
+## Phase 2 Conclusion (Failure)
+
+Most failure modes:
+
+* degrade performance
+* reduce efficiency
+* shorten lifespan
+
+Very few failures kill the concept outright.
+
+The system is **failure-tolerant by design**, which is a prerequisite for lunar infrastructure.
+
+---
+
+## Plain-English Summary
+
+This document maps out how the Lunar Dust Mitigator can fail and which failures actually matter. Most failures only reduce effectiveness rather than killing the system. Only thermal runaway, complete burial, or intrinsic structural collapse invalidate the concept, making the design fundamentally failure-tolerant.
