@@ -1,0 +1,172 @@
+# 06 — Execution Decision Gates
+
+## Lunar Dust Mitigator (LDM) — Phase 3 (Theory-Only)
+
+> **Phase:** 3 (Theory)
+>
+> **Scope Rule:** This document defines the conditions under which theory is considered complete and execution may be *discussed*. It does not authorize execution, testing, procurement, or proposals.
+
+---
+
+## Purpose of This Document
+
+This file answers:
+
+> **When is it rational to stop thinking and consider touching reality — and when is it not?**
+
+Decision gates exist to prevent momentum from substituting for evidence.
+
+---
+
+## Reference Baseline
+
+All gates:
+
+* are consistent with Phase 2 conclusions
+* reference unknowns in `01_Unknowns_Registry.md`
+* enforce kill logic in `03_Kill_Criteria_Definition.md`
+* respect interface isolation in `05_Interface_Risk_Isolation.md`
+* introduce no new assumptions
+
+---
+
+## Gate Structure
+
+Each gate is binary:
+
+* **Pass:** advance to the next gate
+* **Fail:** terminate or return to theory
+
+No partial passes. No conditional optimism.
+
+---
+
+## Gate G0 — Phase 2 Integrity Check
+
+**Condition:**
+
+* Phase 2 documents are complete, consistent, and unmodified
+* No killed concepts reintroduced
+
+**Fail Result:**
+
+* Execution discussion prohibited
+
+---
+
+## Gate G1 — Unknowns Exhaustiveness
+
+**Condition:**
+
+* All unresolved questions are explicitly listed in `01_Unknowns_Registry.md`
+* No known unknowns remain unstated
+
+**Fail Result:**
+
+* Return to Phase 3 theory
+
+---
+
+## Gate G2 — Dependency Transparency
+
+**Condition:**
+
+* All hard dependencies and couplings are identified
+* No hidden reliance on coordination, power, or integration
+
+**Fail Result:**
+
+* Return to Phase 3 theory
+
+---
+
+## Gate G3 — Kill Criteria Acceptance
+
+**Condition:**
+
+* All stakeholders explicitly accept kill criteria
+* No exceptions or overrides are requested
+
+**Fail Result:**
+
+* Execution discussion prohibited
+
+---
+
+## Gate G4 — Interface Independence Confirmation
+
+**Condition:**
+
+* Execution concept does not require shared power, thermal control, structure, or authority
+
+**Fail Result:**
+
+* Execution discussion prohibited
+
+---
+
+## Gate G5 — Question-First Test Framing
+
+**Condition:**
+
+* All proposed execution activities map directly to questions in `04_Test_Question_Set.md`
+* No activity exists solely to "make progress"
+
+**Fail Result:**
+
+* Return to Phase 3 theory
+
+---
+
+## Gate G6 — Early-Termination Readiness
+
+**Condition:**
+
+* Execution plan (if proposed later) prioritizes early failure discovery
+* Termination is treated as success if kill criteria are met
+
+**Fail Result:**
+
+* Execution discussion prohibited
+
+---
+
+## Gate G7 — Authority to Stop
+
+**Condition:**
+
+* A clear authority exists to halt execution immediately upon kill trigger
+* Authority is not subordinate to schedule, funding, or prestige
+
+**Fail Result:**
+
+* Execution discussion prohibited
+
+---
+
+## What Passing All Gates Means
+
+Passing all gates means:
+
+* theory is complete
+* execution *may* be discussed
+* no permission to build has been granted
+
+Authorization requires a separate execution agreement.
+
+---
+
+## Phase 3 Final Statement
+
+Phase 3 ends when:
+
+* all gates pass, or
+* a kill criterion is met
+
+There is no third outcome.
+
+---
+
+## Plain-English Summary
+
+This document defines clear checkpoints that must be passed before anyone is allowed to talk seriously about building the Lunar Dust Mitigator. If any checkpoint fails, work stops or returns to theory. The goal is to ensure execution, if it ever happens, is deliberate, bounded, and easy to terminate.
