@@ -1,0 +1,160 @@
+# Lunar Dust Mitigator (LDM)
+
+## Phase 3 — Pre‑Execution Theory & Closure
+
+> **Status:** Phase 3 (Theory‑Only)
+>
+> **Hard Boundary:** Phase 3 still does **not** authorize building, prototyping, testing, simulation, procurement, deployment, or proposals. Execution requires a separate, explicit execution agreement.
+
+---
+
+## What Phase 3 Is
+
+Phase 3 exists to finish *everything that can be finished without touching reality*.
+
+If Phase 2 answered:
+
+> “Does this violate physics or basic systems logic?”
+
+Phase 3 answers:
+
+> **“If we were allowed to build this later, do we fully understand what questions reality would be asked to answer?”**
+
+Phase 3 is the last theory stop before money, hardware, and risk appear.
+
+---
+
+## What Phase 3 Is Not
+
+Phase 3 is **not**:
+
+* a prototype definition
+* a test plan
+* a simulation campaign
+* a performance claim
+* a cost estimate
+* a schedule
+* a proposal package
+* a TRL advancement
+
+Anyone looking for instructions, validation, or guarantees is in the wrong place.
+
+---
+
+## Why Phase 3 Exists
+
+Most projects fail *between* theory and execution — not because the idea was bad, but because:
+
+* assumptions weren’t fully enumerated
+* unknowns weren’t cleanly isolated
+* test dependencies were tangled
+* integration risks were discovered too late
+
+Phase 3 exists to prevent that failure mode.
+
+It forces every remaining uncertainty into the open **before** execution is allowed.
+
+---
+
+## Relationship to Phase 2
+
+Phase 3 assumes:
+
+* Phase 2 conclusions remain valid
+* no killed concepts are resurrected
+* no new features are introduced
+
+Phase 3 may only:
+
+* sharpen boundaries
+* clarify unknowns
+* formalize handoff conditions
+
+If something requires new physics or optimism, it does not belong here.
+
+---
+
+## Allowed Content in Phase 3
+
+Phase 3 may contain **only** the following:
+
+* Explicit unknown inventories
+* Dependency maps (what depends on what)
+* Kill‑criteria definitions
+* Test *questions* (not test designs)
+* Interface risk isolation
+* Execution decision gates
+
+All content must remain executable **only on paper**.
+
+---
+
+## Forbidden Content in Phase 3
+
+The following are explicitly forbidden:
+
+* Hardware drawings
+* Detailed dimensions
+* Material selections
+* Simulation outputs
+* Empirical coefficients
+* Test procedures
+* Validation metrics
+* Optimization work
+* Cost or schedule models
+
+If it could be handed to a lab and acted on, it does not belong in Phase 3.
+
+---
+
+## Licensing and Execution Rights
+
+All Phase 3 content is governed by the **Theory Exploration License (TEL‑1.0)**.
+
+Execution rights for Phase 3 are:
+
+* granted automatically if a Phase 2 execution license has been purchased, or
+* granted via a standalone Phase 3 execution license
+
+Reading and reasoning remain free. Execution does not.
+
+---
+
+## Intended Audience
+
+Phase 3 is written for:
+
+* senior engineers
+* technical leads
+* program managers
+* risk and integration reviewers
+
+It is not written for builders, hobbyists, or implementers.
+
+---
+
+## How to Read This Folder
+
+1. Read this README first
+2. Read `00_Phase3_Inventory.md`
+3. Stop immediately if you are looking for execution guidance
+
+---
+
+## Phase Discipline Statement
+
+Phase 3 is the **last place ambiguity is allowed**.
+
+If a question cannot be answered here without touching hardware, it must be:
+
+* explicitly stated
+* isolated
+* deferred
+
+Nothing advances silently beyond this point.
+
+---
+
+## Plain‑English Summary
+
+This folder contains the final theory‑only work before any real‑world execution of the Lunar Dust Mitigator. Phase 3 does not provide designs or tests; it exists to surface every remaining unknown and define exactly what would need to be validated later. It closes theory cleanly so execution, if it happens, is deliberate and bounded.
