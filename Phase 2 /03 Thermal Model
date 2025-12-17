@@ -1,0 +1,201 @@
+# 03 — Thermal Model (Analytical)
+
+## Lunar Dust Mitigator (LDM) — Phase 2 (Theory-Only)
+
+> **Phase:** 2 (Theory)
+>
+> **Scope Rule:** This document establishes first‑order thermal behavior and survivability bounds using analytical reasoning only. No material optimization, heaters, active cooling, or test‑derived coefficients are assumed.
+
+---
+
+## Purpose of This Document
+
+This file answers:
+
+> **Can the Lunar Dust Mitigator survive the lunar thermal environment in principle, without relying on precision control or fragile assumptions?**
+
+The goal is not temperature prediction accuracy, but identifying **non‑viable thermal regimes** and **survivable envelopes**.
+
+---
+
+## Reference Assumptions
+
+All reasoning relies solely on:
+
+* `01_System_Assumptions.md`
+* `02_Physics_Bounds.md`
+
+No new assumptions are introduced.
+
+---
+
+## Thermal Environment (First‑Order)
+
+### Lunar Surface Characteristics
+
+* No atmosphere → no convective heat transfer
+* Heat exchange occurs via:
+
+  * solar radiation (direct and reflected)
+  * thermal radiation to space
+  * conduction to regolith (if in contact)
+
+Temperature swings are large, slow, and predictable in a coarse sense.
+
+---
+
+## Dominant Heat Transfer Modes
+
+### 1. Radiation (Primary)
+
+In vacuum, radiation dominates:
+
+* Absorbed solar energy raises temperature
+* Emitted infrared radiation cools the system
+
+Implication:
+
+* Surface area and orientation dominate thermal behavior
+* Fine surface finishes are not required for first‑order reasoning
+
+---
+
+### 2. Conduction (Secondary)
+
+Conduction occurs only through:
+
+* physical contact with regolith
+* internal structural paths
+
+Implication:
+
+* Thermal coupling to the ground can act as a buffer
+* Fully isolated structures experience higher swings
+
+---
+
+### 3. Internal Heat Generation (Minimal)
+
+Per Phase 2 scope:
+
+* Internal heat generation is assumed low
+* Any internally generated heat must be radiated away
+
+Implication:
+
+* Self‑heating does not rescue a thermally non‑viable design
+
+---
+
+## Day / Night Envelope Reasoning
+
+### Lunar Day
+
+* Continuous solar exposure for long durations
+* Risk: overheating of exposed surfaces
+
+Survivable if:
+
+* radiation to space balances absorption
+* geometry avoids concentrating flux
+
+---
+
+### Lunar Night
+
+* No solar input
+* Radiative cooling dominates
+
+Survivable if:
+
+* components tolerate low temperatures
+* thermal mass or ground coupling slows cooldown
+
+---
+
+## Thermal Failure Modes (Theory)
+
+### TF‑1 — Overheating by Geometry
+
+Occurs when:
+
+* surfaces trap radiation
+* self‑shadowing prevents heat rejection
+
+Mitigation space:
+
+* open geometries
+* radiative line‑of‑sight to space
+
+---
+
+### TF‑2 — Excessive Thermal Cycling
+
+Occurs when:
+
+* structure is too thermally isolated
+* low thermal mass
+
+Mitigation space:
+
+* structural mass
+* regolith contact
+
+---
+
+### TF‑3 — Thermal Runaway (Active Systems)
+
+Occurs when:
+
+* active elements generate heat
+* heat rejection is insufficient
+
+Mitigation space:
+
+* minimize active duty cycle
+* passive dominance
+
+---
+
+## Forbidden Thermal Assumptions
+
+The following are **not allowed** in Phase 2 reasoning:
+
+* precise emissivity tuning
+* active heaters as baseline survival
+* active cooling loops
+* perfect insulation
+* narrow temperature setpoints
+
+If survivability depends on any of the above, the concept fails Phase 2.
+
+---
+
+## Survivable Thermal Design Space
+
+Thermally survivable designs share these traits:
+
+* radiation‑dominant heat rejection
+* simple geometry with clear sky view
+* tolerance of wide temperature swings
+* degradation‑tolerant materials
+
+These traits align with dust‑tolerant, low‑precision systems.
+
+---
+
+## Phase 2 Conclusion (Thermal)
+
+At a first‑order level:
+
+* The lunar thermal environment is harsh but predictable
+* Survival without active thermal control is physically possible
+* Geometry and tolerance matter more than optimization
+
+Thermal physics does not kill the concept, but it **severely constrains geometry and complexity**.
+
+---
+
+## Plain‑English Summary
+
+This document shows that the Lunar Dust Mitigator can survive the Moon’s extreme temperature swings in principle, using passive thermal behavior and tolerant design. It rules out reliance on heaters, cooling systems, or fine material tuning, and establishes that simple geometry and wide temperature tolerance are mandatory for thermal viability.
