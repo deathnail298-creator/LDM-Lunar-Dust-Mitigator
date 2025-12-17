@@ -1,0 +1,201 @@
+# 05 — Geometry Logic
+
+## Lunar Dust Mitigator (LDM) — Phase 2 (Theory-Only)
+
+> **Phase:** 2 (Theory)
+>
+> **Scope Rule:** This document defines geometry-driven feasibility logic for dust interception in vacuum. No assumptions are made about precise particle distributions, plume fields, or electrostatic control.
+
+---
+
+## Purpose of This Document
+
+This file answers:
+
+> **What geometries can intercept dust in a vacuum environment, and what geometries are structurally incapable of doing so?**
+
+Geometry is treated as the primary control surface because:
+
+* dust is ballistic (line-of-sight dominated)
+* power is limited
+* abrasion is unavoidable
+
+---
+
+## Reference Assumptions
+
+All reasoning relies solely on:
+
+* `01_System_Assumptions.md`
+* `02_Physics_Bounds.md`
+* `03_Thermal_Model.md`
+* `04_Power_Model.md`
+
+No new assumptions are introduced.
+
+---
+
+## Geometry Principle 1 — Line-of-Sight Interception
+
+### Statement
+
+If dust travels ballistically, interception requires **physical line-of-sight coverage** of likely trajectories.
+
+### Consequences
+
+* coverage is directional
+* blind zones are guaranteed
+* orientation matters
+
+**Geometry that fails:** anything that assumes omnidirectional capture without surface area.
+
+---
+
+## Geometry Principle 2 — Capture Is Not Suppression
+
+### Statement
+
+A geometry can:
+
+* intercept dust
+* redirect dust
+* absorb dust
+
+But cannot make dust cease to exist.
+
+### Consequences
+
+* “capture” means accumulation somewhere
+* accumulation implies saturation and/or disposal
+
+**Geometry that fails:** designs with no accumulation volume or disposal path.
+
+---
+
+## Geometry Principle 3 — Abrasion Tolerance by Shape
+
+### Statement
+
+Since abrasion is guaranteed, geometry must avoid dependence on:
+
+* sharp precision edges
+* tight gaps
+* close tolerances
+
+### Consequences
+
+* blunt edges win
+* large clearances win
+* sacrificial surfaces are acceptable
+
+**Geometry that fails:** fine meshes with critical pore sizing or tight sliding interfaces.
+
+---
+
+## Geometry Principle 4 — Avoid Self-Trapping Heat
+
+### Statement
+
+Thermally survivable geometry must maintain:
+
+* radiative line-of-sight to space
+* non-enclosed hot cavities
+
+### Consequences
+
+* deep cavities can trap heat during lunar day
+* fully enclosed “boxes” may overheat or create thermal cycling stress
+
+**Geometry that fails:** closed chambers that rely on perfect insulation or active thermal control.
+
+---
+
+## Canonical Geometry Classes (Allowed)
+
+These are geometry families that survive Phase 2 bounds.
+
+### G1 — Blunt Interceptor / Baffle
+
+* purpose: take the hit, redirect momentum
+* behavior: acts like a passive “windbreak” in vacuum (ballistic shield)
+* survivability: high (abrasion tolerant)
+
+### G2 — Funnel / Collector
+
+* purpose: increase capture probability by shaping trajectories into a volume
+* behavior: trades wide entrance for smaller storage aperture
+* risk: saturation, heat trapping if enclosed
+
+### G3 — Settling Volume / Hopper
+
+* purpose: hold intercepted dust without relying on active transfer
+* behavior: gravity-assisted settling is plausible under lunar gravity (slow)
+* risk: bridging and packing (treated as unknown; cannot be assumed away)
+
+### G4 — Sacrificial Catch Surface
+
+* purpose: accept dust deposition where it is least harmful
+* behavior: a “dust sink” surface placed to protect sensitive areas
+* risk: eventual burial is acceptable if non-critical
+
+---
+
+## Geometry Classes (Forbidden)
+
+### X1 — Precision Filtration
+
+* fails due to abrasion, clogging, and tolerance requirements
+
+### X2 — Airtight Flow Channels
+
+* fails due to vacuum dominance and lack of convective transport
+
+### X3 — Electrostatic Capture-Only Systems
+
+* fails due to unreliable electrostatics as a control mechanism
+
+### X4 — High-Speed Mechanical Clearing
+
+* fails due to power and wear; introduces moving parts as primary function
+
+---
+
+## Orientation Invariants
+
+A geometry is only viable if it remains useful under:
+
+* uncertain dust approach angles
+* imperfect placement
+* partial burial
+
+Thus:
+
+* designs should remain partially functional when misaligned
+* “perfect alignment required” is a fail condition
+
+---
+
+## Phase 2 Conclusion (Geometry)
+
+Geometry-dominant mitigation is feasible if it is:
+
+* blunt
+* tolerant
+* local
+* directional
+* willing to accumulate dust
+
+Anything requiring:
+
+* precision gaps
+* filtration
+* active clearing as baseline
+* electrostatic control
+
+is killed by Phase 2 bounds.
+
+---
+
+## Plain-English Summary
+
+This document identifies what shapes can plausibly intercept lunar dust in vacuum and what shapes cannot. Viable designs are blunt, directional, abrasion-tolerant interceptors and collectors that accept dust accumulation. Designs that rely on precision filtration, airflow channels, or electrostatic control are ruled out.
