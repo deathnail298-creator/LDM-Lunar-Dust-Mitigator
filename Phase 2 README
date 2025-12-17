@@ -1,0 +1,137 @@
+# Lunar Dust Mitigator (LDM)
+
+## Phase 2 — Theory & Analytical Closure
+
+> **Status:** Phase 2 (Theory‑Only)
+>
+> **Important:** This Phase 2 material is analytical and theoretical only. It does **not** authorize construction, prototyping, field testing, or operational deployment. Phase 0 and Phase 1 remain the only execution‑permissive phases.
+
+---
+
+## What Phase 2 Is (and Is Not)
+
+Phase 2 exists to *finish the thinking*, not to start building.
+
+It is where all remaining analytical gaps from Phase 0 and Phase 1 are closed **in‑chat and on paper only**:
+
+* Physics bounds
+* Geometry logic
+* Thermal envelopes
+* Power feasibility
+* Failure modes
+* Scaling math
+* Interface reasoning
+
+**Phase 2 is not:**
+
+* A TRL advancement
+* A prototype plan
+* A test authorization
+* A manufacturing guide
+* A proposal package
+
+If something cannot be completed 100% analytically without external data, hardware, labs, or simulation tools, it does not belong here.
+
+---
+
+## Why Phase 2 Exists
+
+Phase 0 proved the system deserves to exist.
+
+Phase 1 proved it deserves to be tested.
+
+Phase 2 answers the last question before money gets spent:
+
+> *“Is there any hidden math, physics, or systems logic that quietly kills this idea?”*
+
+This phase is explicitly designed to:
+
+* Reduce downstream risk for contractors
+* Eliminate late‑stage conceptual failures
+* Prevent premature scope creep
+* Provide a clean analytical handoff to future Phase 2/3 executors
+
+---
+
+## Repository Layout
+
+```
+ldmlunardustmitigator/
+└── Phase 2/
+    ├── README.md              ← you are here
+    ├── LICENSE.md             ← Theory Exploration License (TEL‑1.0)
+    ├── 00_Phase2_Inventory.md ← Master list of Phase 2 analytical work
+    ├── 01_System_Assumptions.md
+    ├── 02_Physics_Bounds.md
+    ├── 03_Thermal_Model.md
+    ├── 04_Power_Model.md
+    ├── 05_Geometry_Logic.md
+    ├── 06_Failure_Tree.md
+    ├── 07_Throughput_Limits.md
+    ├── 08_Scaling_Theory.md
+    ├── 09_Interface_Constraints.md
+    └── 10_Theory_Summary.md
+```
+
+Each file is narrowly scoped, self‑contained, and readable without cross‑referencing external material.
+
+---
+
+## Governing Rules for Phase 2 Content
+
+1. **Theory‑only.** No execution guidance.
+2. **Complete or deleted.** If a section cannot be finished analytically, it is crossed out in the inventory.
+3. **No new features.** Phase 2 may only reason about systems already defined in Phase 0/1.
+4. **Deterministic logic.** No probabilistic hand‑waving or optimistic assumptions.
+5. **Plain language preferred.** Equations are used only when they clarify a constraint.
+
+---
+
+## Licensing
+
+All Phase 2 content is governed by the **Theory Exploration License (TEL‑1.0)**:
+
+* Reading and private reasoning are free.
+* Any execution, build, testing, proposal use, or incorporation into real systems requires a paid execution license.
+* Phase 2 does not modify, extend, or contaminate Phase 0 / Phase 1 rights.
+
+See `LICENSE.md` for the full license text.
+
+---
+
+## Intended Audience
+
+Phase 2 is written for:
+
+* Systems engineers sanity‑checking feasibility
+* Contractors evaluating downstream risk
+* Program managers deciding whether to fund Phase 3
+* Review boards asking “what breaks first?”
+
+It is **not** written for hobbyists or builders.
+
+---
+
+## Relationship to Other Phases
+
+| Phase   | Purpose                    | Execution Allowed |
+| ------- | -------------------------- | ----------------- |
+| Phase 0 | Permission to exist        | ❌ No              |
+| Phase 1 | Permission to test         | ✅ Limited         |
+| Phase 2 | Permission to think harder | ❌ No              |
+
+Phase 2 can be read independently but never replaces Phase 0 or Phase 1.
+
+---
+
+## How to Read This Repo
+
+1. Start with `00_Phase2_Inventory.md`
+2. Read sections in numerical order
+3. Stop if you are looking for build instructions — they are intentionally absent
+
+---
+
+## Plain‑English Summary
+
+This folder contains theory‑only analysis that finishes the math and logic behind the Lunar Dust Mitigator without authorizing construction or testing. It exists to remove hidden feasibility risks before money or hardware are involved. Nothing in Phase 2 grants permission to build anything.
