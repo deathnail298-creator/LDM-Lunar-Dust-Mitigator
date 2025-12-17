@@ -1,0 +1,127 @@
+# Phase 3 Inventory — Lunar Dust Mitigator (LDM)
+
+> **Phase:** 3 (Theory-Only)
+>
+> **Rule:** Phase 3 exists to surface *all remaining unknowns* and define decision gates before execution. Nothing in this inventory may enable building, testing, simulation, procurement, or proposals.
+>
+> If an item can be acted on by a lab or workshop, it is **excluded**.
+
+---
+
+## How to Use This File
+
+* This inventory is the controlling document for Phase 3.
+* Each section corresponds to a single Phase 3 document.
+* Items are either:
+
+  * **Included** — theory-only clarification, isolation, or gating
+  * **Excluded (struck out)** — execution-enabling or optimization work
+
+No items may be added without updating this inventory.
+
+---
+
+## Included Phase 3 Work (Authoritative)
+
+### 01 — Unknowns Registry
+
+* Comprehensive list of unresolved questions
+* Clear statement of *why* each cannot be answered analytically
+* Mapping of unknowns to required real-world validation type (thermal, mechanical, dust interaction, power)
+
+Status: **Included**
+
+---
+
+### 02 — Dependency & Coupling Map
+
+* Logical dependencies between subsystems
+* Identification of hidden couplings
+* Separation of hard dependencies vs soft assumptions
+
+Status: **Included**
+
+---
+
+### 03 — Kill Criteria Definition
+
+* Explicit conditions under which execution should be terminated
+* Go / No-Go logic framed without test procedures
+* Early-failure preference codified
+
+Status: **Included**
+
+---
+
+### 04 — Test Question Set (Not Test Plans)
+
+* Precise questions reality must answer
+* Ordering of questions by risk
+* Clear distinction between validation vs optimization questions
+
+Status: **Included**
+
+---
+
+### 05 — Interface Risk Isolation
+
+* Identification of interface-driven execution risks
+* Conditions under which interfaces become unsafe or unacceptable
+* Explicit non-interfaces reaffirmed
+
+Status: **Included**
+
+---
+
+### 06 — Execution Decision Gates
+
+* Criteria required to advance beyond theory
+* Minimum evidence thresholds (qualitative)
+* Conditions for pause, redesign, or abandonment
+
+Status: **Included**
+
+---
+
+## Explicitly Excluded Items
+
+The following are **not allowed** in Phase 3:
+
+* ~~Hardware drawings or CAD~~
+* ~~Detailed dimensions or tolerances~~
+* ~~Material selection or trade studies~~
+* ~~Simulation models or results~~
+* ~~Test procedures or setups~~
+* ~~Performance targets or metrics~~
+* ~~Cost estimates or schedules~~
+* ~~Procurement strategies~~
+* ~~Manufacturing approaches~~
+* ~~Optimization of any kind~~
+
+---
+
+## Phase 3 Discipline Check
+
+If a proposed item:
+
+* reduces uncertainty by *doing* something,
+* narrows design choices prematurely,
+* or could be handed to an engineer to build,
+
+then it does **not** belong in Phase 3.
+
+---
+
+## Relationship to Phase 2
+
+* Phase 3 may not contradict Phase 2 conclusions
+* Phase 3 may not resurrect killed concepts
+* Phase 3 exists only because Phase 2 closed cleanly
+
+If Phase 2 were incomplete, Phase 3 would be invalid.
+
+---
+
+## Plain-English Summary
+
+This file defines exactly what Phase 3 of the Lunar Dust Mitigator is allowed to contain. Phase 3 does not design or test anything; it exposes remaining unknowns, dependencies, and decision gates so execution, if approved later, is deliberate and bounded. Anything that enables building or optimization is intentionally excluded.
