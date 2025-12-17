@@ -1,0 +1,164 @@
+# 01 — Unknowns Registry
+
+## Lunar Dust Mitigator (LDM) — Phase 3 (Theory-Only)
+
+> **Phase:** 3 (Theory)
+>
+> **Scope Rule:** This document enumerates unresolved unknowns that cannot be closed analytically. No attempt is made to answer them here. Each unknown exists specifically because it requires interaction with reality.
+
+---
+
+## Purpose of This Document
+
+This file answers one question:
+
+> **What do we *not* know yet, and why is theory insufficient to answer it?**
+
+This registry is intentionally uncomfortable. Any unknown that can be eliminated analytically does not belong here.
+
+---
+
+## Reference Baseline
+
+All unknowns listed here:
+
+* survived Phase 2 analysis
+* are consistent with Phase 2 conclusions
+* are not solvable without physical interaction, testing, or empirical data
+
+---
+
+## Unknown Classification
+
+Each unknown is tagged with:
+
+* **Domain:** thermal / mechanical / dust interaction / power / integration
+* **Type:** binary viability / range-bounded / degradation-rate
+* **Risk Weight:** low / medium / high (qualitative)
+
+No quantitative probabilities are assigned.
+
+---
+
+## U‑01 — Dust Capture Efficiency (Local)
+
+* **Domain:** Dust Interaction
+* **Type:** Range-bounded
+* **Risk Weight:** Medium
+
+**Unknown:**
+What fraction of locally incident dust is intercepted by viable geometries under real plume conditions?
+
+**Why theory fails:**
+Dust trajectories, charging behavior, and plume variability cannot be bounded tightly without empirical observation.
+
+---
+
+## U‑02 — Long-Term Abrasion Rate
+
+* **Domain:** Mechanical
+* **Type:** Degradation-rate
+* **Risk Weight:** Medium
+
+**Unknown:**
+How quickly do viable interception surfaces erode under sustained dust exposure?
+
+**Why theory fails:**
+Abrasion depends on real particle morphology, impact angles, and cumulative exposure history.
+
+---
+
+## U‑03 — Accumulation Behavior
+
+* **Domain:** Dust Interaction
+* **Type:** Range-bounded
+* **Risk Weight:** High
+
+**Unknown:**
+How dust accumulates, bridges, compacts, or sheds within passive collection volumes.
+
+**Why theory fails:**
+Granular behavior under low gravity is not analytically predictable at this level.
+
+---
+
+## U‑04 — Thermal–Dust Coupling
+
+* **Domain:** Thermal / Dust Interaction
+* **Type:** Range-bounded
+* **Risk Weight:** Medium
+
+**Unknown:**
+How dust accumulation alters radiative properties and thermal cycling over time.
+
+**Why theory fails:**
+Radiative behavior changes nonlinearly with surface state and contamination.
+
+---
+
+## U‑05 — Partial Burial Dynamics
+
+* **Domain:** Integration / Environment
+* **Type:** Binary viability
+* **Risk Weight:** High
+
+**Unknown:**
+Whether partially buried geometries remain meaningfully effective or degrade rapidly.
+
+**Why theory fails:**
+Burial patterns depend on stochastic plume deposition and terrain interaction.
+
+---
+
+## U‑06 — Interference with Adjacent Hardware
+
+* **Domain:** Integration
+* **Type:** Binary viability
+* **Risk Weight:** Medium
+
+**Unknown:**
+Whether dust redirection creates secondary exposure risks for nearby systems.
+
+**Why theory fails:**
+Secondary plume interactions require physical observation.
+
+---
+
+## U‑07 — Passive Clearing or Self-Limiting Behavior
+
+* **Domain:** Dust Interaction
+* **Type:** Binary viability
+* **Risk Weight:** Low
+
+**Unknown:**
+Whether any geometries exhibit natural self-limiting accumulation without intervention.
+
+**Why theory fails:**
+Emergent granular behavior cannot be assumed.
+
+---
+
+## Explicitly Excluded Unknowns
+
+The following are **not** tracked here because they were already killed in Phase 2:
+
+* electrostatic dust control effectiveness
+* airflow-based mitigation
+* precision filtration viability
+* continuous active mitigation feasibility
+
+---
+
+## Registry Discipline
+
+* No unknown may be removed without empirical evidence
+* No unknown may be answered speculatively
+* Unknowns may be reordered but not redefined
+
+This registry remains valid until execution or abandonment.
+
+---
+
+## Plain-English Summary
+
+This document lists the questions about the Lunar Dust Mitigator that theory cannot answer. These unknowns relate to real dust behavior, wear, accumulation, and interaction with other systems. They define exactly what would need to be learned through testing before any execution could proceed.
