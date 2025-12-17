@@ -1,0 +1,149 @@
+# 10 — Theory Summary
+
+## Lunar Dust Mitigator (LDM) — Phase 2 (Theory-Only)
+
+> **Phase:** 2 (Theory)
+>
+> **Scope Rule:** This document summarizes what survived Phase 2 analysis, what was rejected, and what remains unresolved without real-world testing. No new claims or concepts are introduced.
+
+---
+
+## Purpose of This Document
+
+This file answers three final questions:
+
+1. **What survived Phase 2 intact?**
+2. **What was killed or ruled out?**
+3. **What questions can only be answered in later phases?**
+
+It is the authoritative closure for Phase 2.
+
+---
+
+## What Survived Phase 2
+
+The following conclusions remained valid after all Phase 2 constraints were applied:
+
+### S1 — Local, Geometry-Dominant Mitigation Is Feasible
+
+* Dust interception in vacuum is physically possible
+* Effectiveness is local, directional, and geometry-driven
+* Partial mitigation still provides mission value
+
+---
+
+### S2 — Passive-First Designs Are Mandatory
+
+* Power and thermal constraints rule out continuous active control
+* Passive or mostly-passive systems survive best
+* Active elements must be intermittent and non-critical
+
+---
+
+### S3 — Abrasion and Degradation Are Acceptable
+
+* Dust-induced wear is unavoidable
+* Systems that tolerate degradation remain useful
+* Failure-tolerant design is a requirement, not a preference
+
+---
+
+### S4 — Independence Is a Feature
+
+* Mechanical, thermal, power, and control independence are essential
+* The system must not impose requirements on adjacent hardware
+
+---
+
+## What Was Killed in Phase 2
+
+The following classes of ideas were ruled out definitively:
+
+### K1 — Airflow-Based or Aerosol Models
+
+* Invalid in vacuum environments
+
+### K2 — Electrostatic Control as a Primary Mechanism
+
+* Unreliable and non-deterministic
+
+### K3 — Precision Filtration or Tight-Tolerance Mechanisms
+
+* Incompatible with abrasion and thermal cycling
+
+### K4 — Continuous Active Mitigation
+
+* Power-limited and failure-prone
+
+### K5 — Global or Area-Wide Dust Control
+
+* Physically unrealistic given locality constraints
+
+---
+
+## What Remains Unknown (By Design)
+
+The following questions cannot be answered in Phase 2:
+
+### U1 — Quantitative Capture Efficiency
+
+* Requires empirical data
+
+### U2 — Long-Term Wear Rates
+
+* Requires material exposure testing
+
+### U3 — Regolith Interaction Details
+
+* Requires controlled experiments
+
+### U4 — Operational Lifespan
+
+* Requires time-based testing
+
+These unknowns are **not** failures; they are the natural boundary of theory.
+
+---
+
+## Phase Boundary Statement
+
+Phase 2 establishes that the Lunar Dust Mitigator:
+
+* does not violate physics
+* does not rely on hidden assumptions
+* does not impose unacceptable integration risk
+
+It does **not** claim:
+
+* performance metrics
+* readiness for deployment
+* readiness for procurement
+
+Those belong strictly to later phases.
+
+---
+
+## Handoff Conditions to Phase 3+
+
+Advancement beyond Phase 2 requires:
+
+* physical prototyping
+* controlled dust exposure testing
+* thermal cycling validation
+* power duty-cycle verification
+
+These activities are explicitly outside Phase 2 scope.
+
+---
+
+## Phase 2 Final Conclusion
+
+Phase 2 analysis supports the conclusion that the Lunar Dust Mitigator is a **physically plausible, failure-tolerant, infrastructure-class system** when constrained to passive-first, geometry-driven designs.
+
+The concept survives theory. Execution is deferred.
+
+---
+
+## Plain-English Summary
+
+Phase 2 confirms that a simple, passive-first Lunar Dust Mitigator can plausibly reduce local dust exposure without violating physics or creating integration risk. Many attractive but unrealistic ideas were ruled out, and several questions were intentionally left unanswered because they require real-world testing.
