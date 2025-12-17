@@ -1,0 +1,165 @@
+# 04 — Power Model (Feasibility-Only)
+
+## Lunar Dust Mitigator (LDM) — Phase 2 (Theory-Only)
+
+> **Phase:** 2 (Theory)
+>
+> **Scope Rule:** This document evaluates whether power availability can plausibly support the Lunar Dust Mitigator at a first-order level. No component efficiencies, vendor specs, control algorithms, or test data are assumed.
+
+---
+
+## Purpose of This Document
+
+This file answers:
+
+> **Is there a power regime in which the Lunar Dust Mitigator can exist without violating physics or relying on unrealistic duty cycles?**
+
+The goal is not optimization, but identifying **power-kill conditions** versus **survivable operating modes**.
+
+---
+
+## Reference Assumptions
+
+All reasoning relies solely on:
+
+* `01_System_Assumptions.md`
+* `02_Physics_Bounds.md`
+* `03_Thermal_Model.md`
+
+No new assumptions are introduced.
+
+---
+
+## Power Environment (First-Order)
+
+### Available Power Sources (Conceptual)
+
+* Stored energy (batteries or equivalent)
+* Harvested energy (e.g., solar) during lunar day
+
+No assumption is made about:
+
+* panel efficiency
+* storage chemistry
+* power conditioning losses
+
+---
+
+## Power Demand Categories
+
+### P1 — Always-On Passive Load
+
+* Structural elements
+* Passive interception geometry
+
+Power demand: **zero**
+
+---
+
+### P2 — Intermittent Active Load
+
+* Any moving, sensing, or actuating element
+* Occasional clearing, adjustment, or signaling
+
+Power demand:
+
+* non-zero
+* intermittent
+* bounded in time
+
+---
+
+### P3 — Continuous Active Load (Disfavored)
+
+* Any continuously powered mitigation mechanism
+
+Power demand:
+
+* steady
+* cumulative
+
+This category is treated as a **failure risk**, not a baseline.
+
+---
+
+## Feasibility Reasoning
+
+### Case 1 — Fully Passive Operation
+
+If the system operates passively:
+
+* power demand ≈ 0
+* survivability is dominated by thermal and mechanical factors
+
+**Result:** power does not kill the concept
+
+---
+
+### Case 2 — Intermittent Active Operation
+
+If active elements:
+
+* operate infrequently
+* tolerate long off-periods
+
+Then:
+
+* average power draw remains low
+* stored energy can plausibly support operation
+
+**Result:** feasible within broad bounds
+
+---
+
+### Case 3 — Continuous Active Operation
+
+If mitigation requires continuous power:
+
+* average draw accumulates rapidly
+* storage becomes the dominant mass and failure driver
+
+**Result:** power likely kills the concept
+
+---
+
+## Power Kill Conditions
+
+The concept fails Phase 2 if it requires:
+
+* continuous actuation
+* tight timing control
+* high-duty-cycle sensing
+* real-time feedback loops
+
+These conditions imply unrealistic power demands.
+
+---
+
+## Survivable Power Design Space
+
+What survives first-order power analysis:
+
+* passive-first designs
+* long idle periods
+* event-driven activation
+* acceptance of missed dust events
+
+This aligns with partial effectiveness and graceful degradation.
+
+---
+
+## Phase 2 Conclusion (Power)
+
+At a first-order level:
+
+* power availability does not forbid the concept
+* continuous active mitigation is not viable
+* intermittent or passive behavior is mandatory
+
+Power constrains *how often* the system can act, not *whether* it can exist.
+
+---
+
+## Plain-English Summary
+
+This document shows that the Lunar Dust Mitigator can plausibly operate within realistic power limits if it relies primarily on passive behavior and only uses active power intermittently. Any design that requires continuous powered operation is likely to fail due to power constraints.
