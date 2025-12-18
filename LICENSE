@@ -1,21 +1,103 @@
-MIT License
+# Open Reference License (ORL‑1.0)
 
-Copyright (c) 2025 Nathan Rudloff
+## Summary (Plain‑English)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This repository is **open for reading, study, discussion, and non‑commercial experimentation**. You may fork and modify it for learning or internal evaluation. **The moment you commercialize, deploy, sell, or incorporate this work into a product, service, proposal, or revenue‑generating activity, a separate commercial license is required and this license automatically terminates.**
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## 1. Grant of Rights (Non‑Commercial)
+
+Subject to the restrictions below, the Licensor grants you a **non‑exclusive, worldwide, royalty‑free license** to:
+
+* View, copy, and study the contents of this repository
+* Fork and modify the materials for **non‑commercial** purposes
+* Share verbatim or modified copies **without charging a fee**
+
+These rights exist **only while all use remains non‑commercial**.
+
+---
+
+## 2. Automatic Termination Upon Commercialization
+
+This license **automatically and immediately terminates** if you, your employer, or any affiliated entity:
+
+* Sells or licenses a product or service derived from this work
+* Uses this work in a paid contract, proposal, SBIR/STTR submission, or commercial RFP
+* Deploys this work in production systems or customer‑facing operations
+* Incorporates this work into revenue‑generating software, hardware, or services
+
+Upon termination, **all rights under this license cease**.
+
+---
+
+## 3. Commercial Use Requires a Separate License
+
+Any commercial use requires **prior written permission** and a **separate commercial license** from the Licensor.
+
+Commercial terms (pricing, royalties, exclusivity) are **not** granted by this document and must be negotiated separately.
+
+Contact: **<INSERT CONTACT EMAIL>**
+
+---
+
+## 4. Attribution
+
+Attribution is **appreciated but not required** for non‑commercial use.
+
+Attribution **does not** grant permission for commercial use.
+
+---
+
+## 5. No Trademark or Endorsement Rights
+
+This license does **not** grant rights to:
+
+* Use the Licensor’s name, logos, or trademarks
+* Claim endorsement, sponsorship, or partnership
+
+---
+
+## 6. No Warranty
+
+THIS WORK IS PROVIDED **“AS IS”**, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON‑INFRINGEMENT.
+
+---
+
+## 7. Limitation of Liability
+
+IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THIS WORK.
+
+---
+
+## 8. Governing Law
+
+This license shall be governed by and construed in accordance with the laws of the Licensor’s jurisdiction, without regard to conflict‑of‑law principles.
+
+---
+
+## 9. Acceptance
+
+By accessing, copying, or using this repository, you agree to the terms of this license.
+
+If you do not agree, do not use this work.
+
+---
+
+## Appendix: What This License Is / Is Not
+
+**This license is:**
+
+* Open for learning and evaluation
+* Friendly to research and internal review
+* Explicitly conservative about commercialization
+
+**This license is not:**
+
+* Open source under OSI definitions
+* A commercial license
+* Permission to deploy, sell, or monetize
+
+---
+
+**End of ORL‑1.0**
